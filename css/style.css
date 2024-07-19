@@ -703,12 +703,11 @@ h3 {
   width: 95%;
   padding: 0;
   border-radius: 0px;
-  margin-top: 5px;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  top: 10px;
+  top: 27px;
 }
 
 /* line 28, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slick-nav.scss */
@@ -787,7 +786,7 @@ h3 {
   top: 5px;
   padding: 5px;
   right: 0;
-  margin-top: -5px;
+  margin-top: 20px;
   top: -27px;
 }
 
