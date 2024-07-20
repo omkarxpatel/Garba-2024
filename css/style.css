@@ -998,7 +998,7 @@ h3 {
   left: 0;
   right: 0;
   z-index: 99;
-  background: #000;
+  background: #cb0914;
   transform: translateY(70px);
   transition: transform 500ms ease, background 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
