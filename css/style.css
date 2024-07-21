@@ -355,6 +355,16 @@ h3 {
   margin-bottom: 36px;
 }
 
+@media (min-width: 768px) {
+  .first_class {
+    transform: scale(0.8) translateX(-12.5%);
+    transform-origin: top center;
+    width: 125%;
+  }
+}
+
+
+
 @media (max-width: 767px) {
   /* line 244, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_reset.scss */
   .seperator {
@@ -965,6 +975,7 @@ h3 {
   display: block;
   color: #000;
 }
+
 
 /* line 119, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li .submenu li a::before {
