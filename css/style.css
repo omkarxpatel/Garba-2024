@@ -428,6 +428,7 @@ h3 {
     transform: scale(0.8) translateX(-12.5%);
     transform-origin: top center;
     width: 125%;
+    
   }
 }
 
@@ -1140,8 +1141,23 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner_copy.jpg);
+    /* background-image: url(../img/banner/banner_copy.jpg); */
+
+  position: relative;
+  background-image: url(../img/bgt.jpg);
 }
+
+.slider_bg_1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(134, 22, 22, 0.5); /* Adjust the 0.5 value to make it lighter or darker */
+  pointer-events: none;
+}
+
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
 .slider_area {
