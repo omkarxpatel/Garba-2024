@@ -12,6 +12,26 @@ $(window).on('scroll', function () {
 	}
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var popup = document.getElementById("popup");
+  var closeBtn = document.getElementById("close-btn");
+
+  // Show the popup
+  popup.style.display = "flex";
+
+  // Close the popup when the close button is clicked
+  closeBtn.addEventListener("click", function() {
+      popup.style.display = "none";
+  });
+
+  // Optional: Close the popup when clicking outside of the popup content
+  window.addEventListener("click", function(event) {
+      if (event.target === popup) {
+          popup.style.display = "none";
+      }
+  });
+});
+
 
 $(document).ready(function(){
 

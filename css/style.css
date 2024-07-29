@@ -13,6 +13,74 @@
   justify-content: start;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures the popup is on top of other content */
+}
+.responsive-image {
+  border-radius: 20px;
+  width: 100%; /* Default to full width */
+  height: auto;
+}
+
+/* Smaller screens */
+@media (max-width: 767px) {
+  .responsive-image {
+      width: 100%; /* Increase size for smaller devices */
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .responsive-image {
+      width: 80%; /* Adjust size for medium devices */
+  }
+}
+
+/* Larger screens */
+@media (min-width: 1025px) {
+  .responsive-image {
+      width: 50%; /* Decrease size for larger devices */
+  }
+}
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  max-width: 80%; /* Ensures the content fits on smaller screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  overflow-y: auto;
+  max-height: 90%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 34px;
+  cursor: pointer;
+  color: #333;
+}
+
+
 /* line 12, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_extend.scss */
 .speakers_area .single_speaker .speaker_thumb .hover_overlay .social_icon a:hover {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff9600+0,fe531e+26,c022a5+57,1bb8f9+100 */
@@ -816,6 +884,7 @@ h3 {
 /* line 6, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_header.scss */
 .header-area .main-header-area {
   padding: 0 150px;
+  height: 45px;
 }
 
 @media (max-width: 767px) {
@@ -1239,8 +1308,8 @@ h3 {
 }
 
 /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-.slider_area .title_text h3 {
-  font-size: 90px;
+.slider_area .title_text h4 {
+  font-size: 60px;
   font-weight: 700;
   text-transform: capitalize;
   line-height: 100px;
@@ -1250,7 +1319,7 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 97, C:/Users/SPN Graphics/Desktop/CL September/209/HTML/scss/_slider.scss */
-  .slider_area .title_text h3 {
+  .slider_area .title_text h4 {
     font-size: 36px;
     line-height: 43px;
     margin-bottom: 30px;
